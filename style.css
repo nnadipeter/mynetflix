@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI','Inter', 'poppins', sans-serif, Tahoma, Verdana, sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/Hero-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#header-account {
+    width: 100%;
+    background: url(assets/Hero-image.png);
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid red; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px 8%;
+} 
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+}
+
+.english-btn {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+    gap: 8px;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 4px;
+}
+
+button p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: none;
+}
+
+.btn-small {
+    padding: 12px 24px;
+    background: #E50914;
+    border-radius: 4px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #c0060f;
+    box-shadow: 2px 2px 16px rgb(43, 0, 0);
+}
+
+/* ------header text starts here ------- */
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    /* border: 1px solid rgb(40, 182, 28); */
+    height: 90vh;
+    margin: 0 auto;
+    text-align: center;
+    gap: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 120%;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 24px;
+    color: #dbdbdb;
+}
+h6 {
+    font-size: 20px;
+    color: #dbdbdb;
+}
+
+.header-text h6 {
+    font-size: 20px;
+    color: #dbdbdb;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    /* border: 1px solid red; */
+}
+
+#email-field, #password {
+    padding: 16px 24px;
+    gap: 8px;
+    background: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-large {
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px;
+    gap: 4px;
+    background: #E50914;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+    width: 35%;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.btn-large:hover {
+    background-color: #c0060f;
+    box-shadow: 2px 2px 16px rgb(43, 0, 0);
+}
+
+
+
+
+/* ----- Section1 starts here ----- */
+
+.row {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 64px 0px;
+}
+
+.col-1 {
+    flex-basis: 40%;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.col-2 {
+    flex-basis: 60%;
+}
+
+.line {
+    width: 100%;
+    height: 8px;
+    background: #232323;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* ------- account page starts here -------- */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 100vh;
+    padding-bottom: 96px;
+  }
+  
+  .form .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 400px;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 4px;
+    padding: 32px 32px 64px;
+    /* border: 1px solid yellow; */
+
+  }
+
+
+.accounts-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 12px;
+    width: 100%;
+}
+  
+  .form input {
+    padding: 16px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+  }
+
+  #email-field, #password {
+    width: 100%;
+ }
+
+ .btn-large {
+    width: 50%;
+ }
+
+ .form .btn-large {
+    width: 100%;
+ }
+  
+  .form h1 {
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .form button {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .rem-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid rgb(20, 218, 13); */
+  }
+
+  .check-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+    #checkbox {
+     width: 1.2rem;
+     height: 1.2rem
+    }
+
+  
+  .need-help {
+    color: white;
+  }
+  .need-help:hover {
+    color: red;
+  }
+
+  /* FAQ Accordions starts here */
+
+  .faq-accordions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    background: rgb(19,33,68);
+    border-radius: 2px;
+    width: 100%;
+    font-size: 24px;
+    transition: all 0.5s;
+  }
+
+  .faq-accordions:hover {
+    background: rgb(25, 52, 121);
+  }
+
+  .accordion-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 100vh;
+    margin: 96px 0;
+    gap: 12px;
+  }
+
+.fa-plus {
+    width: 8px;
+    color: #fff;
+  }
+
+  .FAQ-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 500px;
+  }
+
+
+
+/* ------- media query starts here -------- */
+
+
+@media only screen and (max-width: 600px) {
+ 
+    .logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-family: 'Inter';
+        font-weight: 800;
+        font-size: 36px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+    
+    .header-text h6 {
+        font-size: 16px;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 80vw;
+        margin: 1rem auto;
+        /* border: 1px solid red; */
+    }
+
+    .accounts-wrapper {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        gap: 12px;
+        width: 100%;
+    }
+
+    #email-field, #password, .btn-large {
+       width: 100%;
+    }
+
+    .row {
+        /* border-bottom: 8px solid rgba(128, 128, 128, 0.7); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 64px 0;
+        gap: 24px;
+    }
+
+    .english-btn {
+        display: none;
+    }
+
+    .FAQ-btn-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
+        max-width: 500px;
+        border: 1px solid red;
+        margin: 3rem 0;
+      }
+
+      .FAQ-btn-wrapper .btn-large {
+        width: fit-content;
+      }
+}
